@@ -1,0 +1,7 @@
+{
+  "name": "Parroquia Nuestra Señora la Milagrosa",
+  "description": "Una plataforma pastoral moderna y acogedora diseñada con estética pastel, tipografía Quicksand y una experiencia de usuario fluida para la comunidad parroquial.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
