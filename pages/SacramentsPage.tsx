@@ -9,6 +9,7 @@ interface SacramentInfo {
   headerGradient: string;
   requirements: string[];
   iconBgColor?: string;
+  circleColor: string;
 }
 
 const SacramentCard = ({ title, subtitle, description, icon, bgColor, iconGradient, textColor, subtextColor, circleColor, onClick }: any) => {
@@ -88,7 +89,7 @@ const SacramentModal = ({ isOpen, onClose, info }: { isOpen: boolean; onClose: (
 
           <div className="space-y-6">
             <div className="flex items-center gap-3 text-slate-800">
-               <svg className="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                </svg>
                <h3 className="text-2xl font-bold">Requisitos</h3>
@@ -97,7 +98,7 @@ const SacramentModal = ({ isOpen, onClose, info }: { isOpen: boolean; onClose: (
             <ul className="space-y-4">
               {info.requirements.map((req, i) => (
                 <li key={i} className="flex items-center gap-4">
-                  <div className={`w-8 h-8 rounded-full ${info.headerGradient.includes('amber') || info.headerGradient.includes('orange') ? 'bg-amber-500' : info.headerGradient.includes('rose') ? 'bg-rose-500' : 'bg-blue-500'} text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm`}>
+                  <div className={`w-8 h-8 rounded-full ${info.circleColor} text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm`}>
                     {i + 1}
                   </div>
                   <span className="text-slate-700 font-medium text-lg">{req}</span>
@@ -117,7 +118,7 @@ const SacramentModal = ({ isOpen, onClose, info }: { isOpen: boolean; onClose: (
               className="flex-1 py-4 bg-white text-slate-700 border-2 border-slate-100 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-colors flex items-center justify-center gap-3"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Consultar: 956 856 561
+              Consultar
             </a>
           </div>
         </div>
@@ -151,7 +152,8 @@ const SacramentsPage: React.FC = () => {
             'Datos de los padrinos (católicos confirmados)',
             'Asistencia a charlas de preparación',
             'Entrevista con el párroco'
-        ]
+        ],
+        circleColor: 'bg-blue-500'
       })
     },
     {
@@ -175,7 +177,8 @@ const SacramentsPage: React.FC = () => {
             'Completar el ciclo de catequesis (2 años)',
             'Participación activa en la vida parroquial',
             'Certificado de bautismo'
-        ]
+        ],
+        circleColor: 'bg-amber-500'
       })
     },
     {
@@ -199,19 +202,35 @@ const SacramentsPage: React.FC = () => {
             'Completar el proceso de catequesis de Confirmación',
             'Elegir un padrino/madrina católico confirmado',
             'Participar en retiro espiritual'
-        ]
+        ],
+        circleColor: 'bg-rose-500'
       })
     },
     {
       title: 'Matrimonio',
       subtitle: 'Sacramento del Amor Conyugal',
       description: 'El Matrimonio cristiano es la alianza por la que un hombre y una mujer constituyen una comunidad de vida y...',
-      icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3a2 2 0 00-2 2v3m2-3h2m4 0h2m-6 4h1a3 3 0 013 3v1" /></svg>,
+      icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3a2 2 0 00-2 2v3m2-3h2m4 0h2m-6 4h1a3 3 0 013 3v1" /></svg>,
       bgColor: 'bg-[#f4f1ff]',
       iconGradient: 'bg-gradient-to-br from-indigo-400 to-indigo-600',
       textColor: 'text-indigo-600',
       subtextColor: 'text-indigo-400',
-      circleColor: 'bg-indigo-200'
+      circleColor: 'bg-indigo-200',
+      onClick: () => setActiveModalInfo({
+        title: 'Matrimonio',
+        subtitle: 'Sacramento del Amor Conyugal',
+        description: 'El Matrimonio cristiano es la alianza por la que un hombre y una mujer constituyen una comunidad de vida y amor, elevada por Cristo a la dignidad de sacramento.',
+        icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>,
+        headerGradient: 'bg-gradient-to-r from-[#6366f1] to-[#a855f7]',
+        requirements: [
+            'Partidas de bautismo actualizadas',
+            'Curso de preparación matrimonial',
+            'Declaración de libertad',
+            'Entrevistas con el sacerdote',
+            'Amonestaciones parroquiales'
+        ],
+        circleColor: 'bg-[#6366f1]'
+      })
     },
     {
       title: 'Reconciliación',
@@ -222,7 +241,22 @@ const SacramentsPage: React.FC = () => {
       iconGradient: 'bg-gradient-to-br from-emerald-400 to-emerald-600',
       textColor: 'text-emerald-600',
       subtextColor: 'text-emerald-400',
-      circleColor: 'bg-emerald-200'
+      circleColor: 'bg-emerald-200',
+      onClick: () => setActiveModalInfo({
+        title: 'Reconciliación',
+        subtitle: 'Sacramento del Perdón',
+        description: 'La Reconciliación o Confesión es el sacramento por el cual Dios perdona los pecados cometidos después del Bautismo. Es un encuentro de misericordia y renovación.',
+        icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
+        headerGradient: 'bg-gradient-to-r from-[#10b981] to-[#059669]',
+        requirements: [
+            'Examen de conciencia sincero',
+            'Arrepentimiento de los pecados',
+            'Propósito de enmienda',
+            'Confesión de los pecados',
+            'Cumplir la penitencia impuesta'
+        ],
+        circleColor: 'bg-[#10b981]'
+      })
     },
     {
       title: 'Unción de Enfermos',
@@ -233,7 +267,21 @@ const SacramentsPage: React.FC = () => {
       iconGradient: 'bg-gradient-to-br from-slate-400 to-slate-600',
       textColor: 'text-slate-600',
       subtextColor: 'text-slate-400',
-      circleColor: 'bg-slate-200'
+      circleColor: 'bg-slate-200',
+      onClick: () => setActiveModalInfo({
+        title: 'Unción de Enfermos',
+        subtitle: 'Consuelo en la Enfermedad',
+        description: 'Este sacramento confiere una gracia especial al cristiano que experimenta dificultades inherentes a la enfermedad grave o a la vejez. Fortalece el alma y el cuerpo.',
+        icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+        headerGradient: 'bg-gradient-to-r from-[#64748b] to-[#475569]',
+        requirements: [
+            'Solicitar el sacramento al párroco',
+            'Puede recibirse en casa, hospital o iglesia',
+            'Se puede recibir varias veces si la enfermedad se agrava',
+            'Se recomienda recibirlo junto con la Eucaristía'
+        ],
+        circleColor: 'bg-[#64748b]'
+      })
     },
   ];
 
