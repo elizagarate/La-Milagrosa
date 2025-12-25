@@ -33,8 +33,8 @@ const Footer: React.FC = () => {
             <h4 className="font-bold mb-6 text-lg">Secciones</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
               <li><Link to="/#historia" className="hover:text-indigo-400">Sobre Nosotros</Link></li>
-              <li><Link to="/#servicios" className="hover:text-indigo-400">Horarios y Servicios</Link></li>
-              <li><Link to="/#formacion" className="hover:text-indigo-400">Catequesis y Cursos</Link></li>
+              <li><Link to="/contacto" onClick={() => window.scrollTo(0, 0)} className="hover:text-indigo-400">Horarios y Servicios</Link></li>
+              <li><Link to="/formacion" onClick={() => window.scrollTo(0, 0)} className="hover:text-indigo-400">Catequesis y Cursos</Link></li>
               <li><Link to="/contacto" onClick={() => window.scrollTo(0, 0)} className="hover:text-indigo-400">Página de Contacto</Link></li>
             </ul>
           </div>
@@ -42,9 +42,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-lg">Comunidad</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
-              <li><a href="#" className="hover:text-indigo-400">Grupo Scout</a></li>
+              <li><Link to="/emaus" onClick={() => window.scrollTo(0, 0)} className="hover:text-indigo-400">Emaús</Link></li>
               <li><a href="#" className="hover:text-indigo-400">Cáritas Parroquial</a></li>
-              <li><a href="#" className="hover:text-indigo-400">Coro Milagrosa</a></li>
+              <li><Link to="/cursillos" onClick={() => window.scrollTo(0, 0)} className="hover:text-indigo-400">Cursillos</Link></li>
               <li><a href="#" className="hover:text-indigo-400">Revista Digital</a></li>
             </ul>
           </div>
