@@ -129,14 +129,6 @@ const CursillosPage: React.FC = () => {
                     <div className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center">📞</div>
                     <span className="text-xl font-bold">956 30 60 60</span>
                   </div>
-                  <a 
-                    href="http://www.cursillosdecristiandadjerez.es" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block text-amber-400 font-bold hover:underline"
-                  >
-                    www.cursillosdecristiandadjerez.es
-                  </a>
                 </div>
               </div>
 

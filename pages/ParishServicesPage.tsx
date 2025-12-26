@@ -34,7 +34,7 @@ const ParishServicesPage: React.FC = () => {
       iconColor: 'bg-blue-500'
     },
     {
-      title: 'Horarios de Misa en El Puerto',
+      title: 'Horarios de Misa',
       schedule: 'Laborables: 20:00 h.\nDomingos: 11:00, 12:00 y 20:00 h.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
       bgColor: 'bg-indigo-50/50',
@@ -49,7 +49,7 @@ const ParishServicesPage: React.FC = () => {
     },
     {
       title: 'Adoración Eucarística',
-      schedule: 'Jueves Eucarísticos\n20:30 h. Exposición del Santísimo',
+      schedule: 'Adoración prolongada\nSábado: 08:00-20:00\nAdoración normal\nJueves: 20:30-21:30',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" /></svg>,
       bgColor: 'bg-amber-50/50',
       iconColor: 'bg-amber-500'

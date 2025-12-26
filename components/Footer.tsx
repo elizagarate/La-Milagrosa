@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
-          <p>© 2024 Parroquia Nuestra Señora la Milagrosa. Todos los derechos reservados.</p>
+          <p>© 2026 Parroquia Nuestra Señora la Milagrosa. Todos los derechos reservados.</p>
           <div className="flex gap-6">
              <a href="#" className="hover:text-slate-300">Aviso Legal</a>
              <a href="#" className="hover:text-slate-300">Política de Privacidad</a>

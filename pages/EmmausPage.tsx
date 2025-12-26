@@ -24,7 +24,7 @@ const EmmausPage: React.FC = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-orange-100 transition-all hover:-translate-y-1">
-              Próximas Fechas 2024
+              Próximas Fechas 2026
             </button>
             <a href="#info" className="bg-white text-orange-600 border-2 border-orange-100 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-orange-50 transition-all hover:-translate-y-1">
               ¿En qué consiste?

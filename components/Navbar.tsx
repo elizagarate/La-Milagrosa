@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { label: 'Inicio', href: '/' },
-    { label: 'Servicios', href: '/servicios-parroquiales' },
+    { label: 'Horarios', href: '/servicios-parroquiales' },
     { label: 'Formación', href: '/formacion' },
     { 
       label: 'Sacramentos', 
