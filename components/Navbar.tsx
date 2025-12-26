@@ -76,7 +76,10 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           {menuItems.map((item) => (
-            <div key={item.label} className="relative group">
+            <div 
+              key={item.label} 
+              className={`relative group ${item.label === 'Inicio' ? 'md:hidden lg:block' : ''}`}
+            >
               {item.subItems ? (
                 <div className="flex items-center">
                    <button 
