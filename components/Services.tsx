@@ -3,8 +3,8 @@ import React from 'react';
 
 const Services: React.FC = () => {
   const schedule = [
-    { day: 'Lunes a Sábado', morning: '09:00 - 10:00', evening: '19:00 - 20:00' },
-    { day: 'Domingos y Festivos', morning: '10:00, 11:30, 13:00', evening: '20:00' },
+    { day: 'Lunes a Sábado', evening: '20:00' },
+    { day: 'Domingos y Festivos', morning: '11:00, 12:00', evening: '20:00' },
   ];
 
   return (
@@ -23,8 +23,9 @@ const Services: React.FC = () => {
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-700">Horario de Despacho</h4>
-                  <p className="text-slate-500">Martes y Jueves: 17:00 a 19:00 h.</p>
+                  <h4 className="font-bold text-slate-700">Archivo parroquial</h4>
+                  <p className="text-slate-500 text-sm">Lunes y jueves 10:00-13:00 y 17:30-20:00.</p>
+                  <p className="text-slate-500 text-sm">Martes, miércoles y viernes 10:00-13:00.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -33,7 +34,7 @@ const Services: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-700">Atención Telefónica</h4>
-                  <p className="text-slate-500">+34 912 345 678</p>
+                  <p className="text-slate-500">956 85 65 61</p>
                 </div>
               </div>
             </div>
@@ -45,14 +46,24 @@ const Services: React.FC = () => {
               {schedule.map((item, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                   <p className="font-bold text-indigo-600 mb-2">{item.day}</p>
-                  <div className="grid grid-cols-2 gap-2 text-slate-600 text-sm">
-                    <div>Mañanas: <span className="font-medium text-slate-800">{item.morning}</span></div>
-                    <div>Tardes: <span className="font-medium text-slate-800">{item.evening}</span></div>
+                  <div className={`grid ${item.morning ? 'grid-cols-2' : 'grid-cols-1'} gap-2 text-slate-600 text-sm`}>
+                    {item.morning && <div>Mañanas: <span className="font-medium text-slate-800">{item.morning}</span></div>}
+                    {item.evening && <div>Tardes: <span className="font-medium text-slate-800">{item.evening}</span></div>}
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-slate-400 italic">Los horarios pueden variar en periodos estivales.</p>
+            <p className="text-sm text-slate-400 italic">
+              Los horarios pueden variar en periodos estivales.{" "}
+              <a 
+                href="https://misas.org/p/parroquia-de-la-medalla-milagrosa-el-puerto-de-santa-maria" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-indigo-500 transition-colors font-medium"
+              >
+                Compruébalo en misas.org.
+              </a>
+            </p>
           </div>
         </div>
       </div>

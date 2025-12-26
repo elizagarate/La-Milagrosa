@@ -17,6 +17,7 @@ import SacramentalPreparationPage from './pages/SacramentalPreparationPage';
 import FormationPage from './pages/FormationPage';
 import ParishServicesPage from './pages/ParishServicesPage';
 import CursillosPage from './pages/CursillosPage';
+import EucharistPage from './pages/EucharistPage';
 
 const App: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const App: React.FC = () => {
             } />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/sacramentos" element={<SacramentsPage />} />
+            <Route path="/eucaristia" element={<EucharistPage />} />
             <Route path="/emaus" element={<EmmausPage />} />
             <Route path="/preparacion-sacramental" element={<SacramentalPreparationPage />} />
             <Route path="/formacion" element={<FormationPage />} />

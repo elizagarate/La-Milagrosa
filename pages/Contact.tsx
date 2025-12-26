@@ -89,9 +89,9 @@ const Contact: React.FC = () => {
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-slate-700">Horario Secretaría</h4>
-                      <p className="text-slate-500">Lunes a Viernes: 10:00 - 13:00</p>
-                      <p className="text-slate-500">Tardes: 17:00 - 20:00</p>
+                      <h4 className="font-bold text-slate-700">Archivo parroquial</h4>
+                      <p className="text-slate-500">Lunes y jueves 10:00-13:00 y 17:30-20:00</p>
+                      <p className="text-slate-500">Martes, miércoles y viernes 10:00-13:00</p>
                     </div>
                   </div>
                 </div>

@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
       label: 'Sacramentos', 
       href: '/sacramentos',
       subItems: [
+        { label: 'La Eucaristía', href: '/eucaristia' },
         { label: 'Los Sacramentos', href: '/sacramentos' },
         { label: 'Preparación Sacramental', href: '/preparacion-sacramental' },
       ]

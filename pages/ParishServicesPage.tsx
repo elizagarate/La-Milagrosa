@@ -3,7 +3,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
-const ServiceCard = ({ title, schedule, icon, bgColor, iconColor }: { title: string, schedule: string, icon: React.ReactNode, bgColor: string, iconColor: string }) => {
+// Using React.FC to handle standard React props like 'key' correctly when mapping over components
+const ServiceCard: React.FC<{
+  title: string;
+  schedule: string;
+  icon: React.ReactNode;
+  bgColor: string;
+  iconColor: string;
+}> = ({ title, schedule, icon, bgColor, iconColor }) => {
   return (
     <div className={`p-8 rounded-[2.5rem] ${bgColor} border border-white/50 shadow-sm hover:shadow-md transition-all group`}>
       <div className={`w-14 h-14 rounded-2xl ${iconColor} flex items-center justify-center text-white mb-6 shadow-sm group-hover:scale-110 transition-transform`}>
@@ -28,7 +35,7 @@ const ParishServicesPage: React.FC = () => {
     },
     {
       title: 'Horarios de Misa en El Puerto',
-      schedule: 'Laborables: 19:30 h.\nDomingos: 10:00, 12:00 y 20:00 h.',
+      schedule: 'Laborables: 20:00 h.\nDomingos: 11:00, 12:00 y 20:00 h.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
       bgColor: 'bg-indigo-50/50',
       iconColor: 'bg-indigo-500'
@@ -48,8 +55,8 @@ const ParishServicesPage: React.FC = () => {
       iconColor: 'bg-amber-500'
     },
     {
-      title: 'Atención al Fiel (Despacho)',
-      schedule: 'Lunes a Viernes\n17:30 a 20:00 h.',
+      title: 'Archivo parroquial',
+      schedule: 'Lunes y jueves 10:00-13:00 y 17:30-20:00.\nmartes, miércoles y viernes 10:00-13:00.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
       bgColor: 'bg-emerald-50/50',
       iconColor: 'bg-emerald-500'
