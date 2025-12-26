@@ -16,7 +16,7 @@ const EmmausPage: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://github.com/elizagarate/La-Milagrosa/blob/main/images/emaus-camino-I.jpg?raw=true" 
+            src="https://github.com/elizagarate/images/blob/main/La-Milagrosa/emaus-camino-I.jpg?raw=true" 
             alt="Presencia espiritual" 
             className="w-full h-full object-cover"
           />
@@ -53,7 +53,7 @@ const EmmausPage: React.FC = () => {
           <div className="max-w-6xl mx-auto">
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl mb-20 group">
               <img 
-                src="https://github.com/elizagarate/La-Milagrosa/blob/f459af8d7e429146c5fac199f52f93b02c10106e/images/jesus.webp?raw=true" 
+                src="https://github.com/elizagarate/images/blob/main/La-Milagrosa/jesus.webp?raw=true" 
                 alt="Caminando a Emaús" 
                 className="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105"
               />
