@@ -134,7 +134,7 @@ const SacramentsPage: React.FC = () => {
     {
       title: 'Bautismo',
       subtitle: 'Puerta de la Vida Cristiana',
-      description: 'El Bautismo es el primer sacramento de la iniciación cristiana. A través del agua y el Espíritu Santo, nacemos a una nueva vida en Cristo y nos incorporamos a la Iglesia, su cuerpo místico.',
+      description: 'El Bautismo es el primer sacramento de la iniciación cristiana. A través del agua y el Espíritu Santo, nacemos a una nueva vida en Cristo.',
       icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.022.547l-2.387 2.387a2 2 0 102.828 2.828l.649-.649a2 2 0 011.414-.586h2.946a2 2 0 011.414.586l.649.649a2 2 0 102.828-2.828l-2.387-2.387zM12 4c-4.418 0-8 3.582-8 8a8 8 0 008 8c.245 0 .487-.01.727-.03M12 4v4m0 0l-2-2m2 2l2-2" /></svg>,
       bgColor: 'bg-[#f1f7ff]',
       iconGradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
@@ -144,7 +144,7 @@ const SacramentsPage: React.FC = () => {
       onClick: () => setActiveModalInfo({
         title: 'Bautismo',
         subtitle: 'Puerta de la Vida Cristiana',
-        description: 'El Bautismo es el primer sacramento de la iniciación cristiana. A través del agua y el Espíritu Santo, nacemos a una nueva vida en Cristo y nos incorporamos a la Iglesia, su cuerpo místico.',
+        description: 'El Bautismo es el primer sacramento de la iniciación cristiana. A través del agua y el Espíritu Santo, nacemos a una nueva vida en Cristo y nos incorporamos a la Iglesia.',
         icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.022.547l-2.387 2.387a2 2 0 102.828 2.828l.649-.649a2 2 0 011.414-.586h2.946a2 2 0 011.414.586l.649.649a2 2 0 102.828-2.828l-2.387-2.387zM12 4c-4.418 0-8 3.582-8 8a8 8 0 008 8c.245 0 .487-.01.727-.03M12 4v4m0 0l-2-2m2 2l2-2" /></svg>,
         headerGradient: 'bg-gradient-to-r from-blue-400 to-indigo-600',
         requirements: [
@@ -158,8 +158,8 @@ const SacramentsPage: React.FC = () => {
     },
     {
       title: 'Primera Comunión',
-      subtitle: 'Encuentro con Cristo Eucaristía',
-      description: 'La Eucaristía es el sacramento en el que recibimos el Cuerpo y la Sangre de Jesucristo. Es el centro de la vida cristiana y la fuente de toda gracia.',
+      subtitle: 'Encuentro con Cristo',
+      description: 'La Eucaristía es el sacramento en el que recibimos por primera vez el Cuerpo de Cristo. Es un momento de alegría inmensa.',
       icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" /></svg>,
       bgColor: 'bg-[#fffcf1]',
       iconGradient: 'bg-gradient-to-br from-amber-400 to-amber-600',
@@ -184,7 +184,7 @@ const SacramentsPage: React.FC = () => {
     {
       title: 'Confirmación',
       subtitle: 'Plenitud del Espíritu Santo',
-      description: 'La Confirmación completa la gracia del Bautismo. Por este sacramento, el cristiano recibe la fuerza del Espíritu Santo para ser testigo de Cristo en el mundo.',
+      description: 'La Confirmación completa la gracia del Bautismo. El cristiano recibe la fuerza del Espíritu Santo para ser testigo.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>,
       bgColor: 'bg-[#fff1f4]',
       iconGradient: 'bg-gradient-to-br from-rose-400 to-rose-600',
@@ -207,10 +207,35 @@ const SacramentsPage: React.FC = () => {
       })
     },
     {
+      title: 'Eucaristía',
+      subtitle: 'Fuente y Cumbre',
+      description: 'El sacrificio del Cuerpo y la Sangre de Jesucristo que Él instituyó para perpetuar el sacrificio de la cruz.',
+      icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 21l-2-2m2 2l2-2m-2 2V3" /></svg>,
+      bgColor: 'bg-amber-50/50',
+      iconGradient: 'bg-gradient-to-br from-orange-400 to-amber-600',
+      textColor: 'text-amber-700',
+      subtextColor: 'text-amber-500',
+      circleColor: 'bg-amber-100',
+      onClick: () => setActiveModalInfo({
+        title: 'Eucaristía',
+        subtitle: 'Sacramento del Altar',
+        description: 'La Eucaristía es el corazón de la vida de la Iglesia. En ella, Cristo se nos da como alimento bajo las especies de pan y vino.',
+        icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 21l-2-2m2 2l2-2m-2 2V3" /></svg>,
+        headerGradient: 'bg-gradient-to-r from-orange-400 to-amber-600',
+        requirements: [
+            'Estar bautizado',
+            'Encontrarse en estado de gracia',
+            'Observar el ayuno eucarístico',
+            'Saber y meditar a Quién se recibe'
+        ],
+        circleColor: 'bg-orange-500'
+      })
+    },
+    {
       title: 'Matrimonio',
-      subtitle: 'Sacramento del Amor Conyugal',
-      description: 'El Matrimonio cristiano es la alianza por la que un hombre y una mujer constituyen una comunidad de vida y...',
-      icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3a2 2 0 00-2 2v3m2-3h2m4 0h2m-6 4h1a3 3 0 013 3v1" /></svg>,
+      subtitle: 'Amor Conyugal',
+      description: 'La alianza por la que un hombre y una mujer constituyen una comunidad de vida y amor.',
+      icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>,
       bgColor: 'bg-[#f4f1ff]',
       iconGradient: 'bg-gradient-to-br from-indigo-400 to-indigo-600',
       textColor: 'text-indigo-600',
@@ -235,7 +260,7 @@ const SacramentsPage: React.FC = () => {
     {
       title: 'Reconciliación',
       subtitle: 'Sacramento del Perdón',
-      description: 'La Reconciliación o Confesión es el sacramento por el cual Dios perdona los pecados cometidos después del...',
+      description: 'El sacramento por el cual Dios perdona los pecados cometidos después del Bautismo.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
       bgColor: 'bg-[#f1fff6]',
       iconGradient: 'bg-gradient-to-br from-emerald-400 to-emerald-600',
@@ -245,7 +270,7 @@ const SacramentsPage: React.FC = () => {
       onClick: () => setActiveModalInfo({
         title: 'Reconciliación',
         subtitle: 'Sacramento del Perdón',
-        description: 'La Reconciliación o Confesión es el sacramento por el cual Dios perdona los pecados cometidos después del Bautismo. Es un encuentro de misericordia y renovación.',
+        description: 'La Reconciliación o Confesión es el sacramento por el cual Dios perdona los pecados cometidos después del Bautismo. Es un encuentro de misericordia.',
         icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
         headerGradient: 'bg-gradient-to-r from-[#10b981] to-[#059669]',
         requirements: [
@@ -260,8 +285,8 @@ const SacramentsPage: React.FC = () => {
     },
     {
       title: 'Unción de Enfermos',
-      subtitle: 'Consuelo en la Enfermedad',
-      description: 'Este sacramento confiere una gracia especial al cristiano que experimenta dificultades inherentes a la enfermeda...',
+      subtitle: 'Consuelo y Gracia',
+      description: 'Este sacramento confiere una gracia especial al cristiano ante la enfermedad grave o vejez.',
       icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
       bgColor: 'bg-[#f4f4f4]',
       iconGradient: 'bg-gradient-to-br from-slate-400 to-slate-600',
@@ -271,7 +296,7 @@ const SacramentsPage: React.FC = () => {
       onClick: () => setActiveModalInfo({
         title: 'Unción de Enfermos',
         subtitle: 'Consuelo en la Enfermedad',
-        description: 'Este sacramento confiere una gracia especial al cristiano que experimenta dificultades inherentes a la enfermedad grave o a la vejez. Fortalece el alma y el cuerpo.',
+        description: 'Este sacramento confiere una gracia especial al cristiano que experimenta dificultades inherentes a la enfermedad grave o a la vejez.',
         icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
         headerGradient: 'bg-gradient-to-r from-[#64748b] to-[#475569]',
         requirements: [
@@ -290,7 +315,7 @@ const SacramentsPage: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <h1 className="text-5xl font-bold text-slate-800">Los Sacramentos</h1>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-lg text-slate-500 leading-relaxed font-quicksand">
             Signos sensibles y eficaces de la gracia, instituidos por Cristo y confiados a la Iglesia, a través de los cuales se nos otorga la vida divina.
           </p>
         </div>
@@ -307,11 +332,11 @@ const SacramentsPage: React.FC = () => {
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
             </div>
             <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-slate-800">Orden Sacerdotal</h3>
-                <p className="text-slate-500 text-lg">
+                <h3 className="text-2xl font-bold text-slate-800 font-quicksand">Orden Sacerdotal</h3>
+                <p className="text-slate-500 text-lg font-quicksand">
                     A través de este sacramento, la misión confiada por Cristo a sus Apóstoles sigue siendo ejercida en la Iglesia hasta el fin de los tiempos.
                 </p>
-                <div className="text-amber-700 font-bold text-sm cursor-pointer hover:underline inline-flex items-center gap-2">
+                <div className="text-amber-700 font-bold text-sm cursor-pointer hover:underline inline-flex items-center gap-2 font-quicksand">
                     Información Vocacional <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
                 </div>
             </div>

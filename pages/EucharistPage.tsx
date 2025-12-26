@@ -18,7 +18,7 @@ const EucharistPage: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" />
             </svg>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-[#a855f7] mb-6 tracking-widest font-cinzel">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#a855f7] mb-6 tracking-widest">
             La Eucaristía
           </h1>
           <div className="max-w-3xl mx-auto">

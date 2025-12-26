@@ -29,14 +29,13 @@ const EmmausPage: React.FC = () => {
       <section className="relative z-20 py-12 bg-white">
         <div className="container mx-auto px-6 text-center">
           <div className="animate-fade-in space-y-8">
-            {/* FIRST TITLE: Retains Cinzel for impact */}
-            <h1 className="font-cinzel text-4xl md:text-6xl lg:text-7xl text-slate-900 font-bold tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl text-slate-900 font-bold tracking-tight">
               El Retiro de <span className="text-orange-500/90">Emaús</span>
             </h1>
             <div className="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
             
             <div className="max-w-2xl mx-auto bg-slate-50/50 backdrop-blur-sm p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-sm">
-              <p className="font-quicksand text-xl md:text-2xl text-slate-700 italic leading-relaxed">
+              <p className="text-xl md:text-2xl text-slate-700 italic leading-relaxed">
                 "¿No ardía nuestro corazón en nosotros, mientras nos hablaba en el camino?"
               </p>
               <div className="mt-6 flex items-center justify-center gap-3">
@@ -66,7 +65,6 @@ const EmmausPage: React.FC = () => {
                     Próxima Edición 2026
                   </span>
                 </div>
-                {/* Subsequent title: Changed to Quicksand (default font-bold) */}
                 <h2 className="text-6xl md:text-8xl text-white font-bold mb-6 tracking-tight">
                   El Camino
                 </h2>
@@ -83,7 +81,6 @@ const EmmausPage: React.FC = () => {
                 <div className="w-20 h-20 bg-orange-50 rounded-[2rem] flex items-center justify-center text-orange-600 group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 shadow-sm mx-auto md:mx-0">
                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                {/* Changed to Quicksand */}
                 <h3 className="text-3xl font-bold text-slate-800">48 Horas</h3>
                 <p className="text-slate-500 text-lg leading-relaxed font-quicksand">Un fin de semana diseñado para que desconectes del ruido y escuches a tu corazón.</p>
               </div>
@@ -92,7 +89,6 @@ const EmmausPage: React.FC = () => {
                 <div className="w-20 h-20 bg-rose-50 rounded-[2rem] flex items-center justify-center text-rose-600 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500 shadow-sm mx-auto md:mx-0">
                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                 </div>
-                {/* Changed to Quicksand */}
                 <h3 className="text-3xl font-bold text-slate-800">De Laicos para Laicos</h3>
                 <p className="text-slate-500 text-lg leading-relaxed font-quicksand">Hombres y mujeres que comparten sus vidas para ayudarte a encontrar la tuya.</p>
               </div>
@@ -101,7 +97,6 @@ const EmmausPage: React.FC = () => {
                 <div className="w-20 h-20 bg-amber-50 rounded-[2rem] flex items-center justify-center text-amber-600 group-hover:bg-amber-500 group-hover:text-white transition-all duration-500 shadow-sm mx-auto md:mx-0">
                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" /></svg>
                 </div>
-                {/* Changed to Quicksand */}
                 <h3 className="text-3xl font-bold text-slate-800">Encuentro Real</h3>
                 <p className="text-slate-500 text-lg leading-relaxed font-quicksand">Una oportunidad para renovar tu fe o descubrirla por primera vez.</p>
               </div>
@@ -114,7 +109,6 @@ const EmmausPage: React.FC = () => {
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16">
-            {/* Changed to Quicksand */}
             <h2 className="text-4xl font-bold text-slate-800 mb-4">Preguntas Frecuentes</h2>
             <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
           </div>
@@ -148,7 +142,6 @@ const EmmausPage: React.FC = () => {
           {/* CTA Card */}
           <div className="mt-24 p-12 bg-slate-900 rounded-[4rem] text-white text-center relative overflow-hidden shadow-3xl">
             <div className="relative z-10 space-y-8">
-              {/* Changed to Quicksand */}
               <h3 className="text-4xl md:text-5xl font-bold mb-4">Tu camino empieza aquí</h3>
               <p className="text-slate-400 text-xl max-w-xl mx-auto leading-relaxed font-quicksand">
                 No es casualidad que estés leyendo esto. Jesús quiere caminar contigo.
